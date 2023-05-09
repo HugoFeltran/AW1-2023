@@ -1,0 +1,11 @@
+.fundo{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 100%);
+}
+
+h1{
+    margin: 200px;
+    position: absolute; top: 80px;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: white;
+}
