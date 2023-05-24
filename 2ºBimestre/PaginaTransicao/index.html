@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="fundo">
+    <div class="logo">
+        <img src="logo.svg" alt="logosccp" height="180px">
+    </div>
+
+    <header>
+        <ul>
+            <li><a href="https://instagram.com/rogerguedes23?igshid=YmMyMTA2M2Y="> Acesse seu instagram  -</a></li>
+            <li><a href="https://www.youtube.com/watch?v=WvU5wWia2GE "> Mundial 2012  - </a></li>
+            <li><a href=" https://www.youtube.com/watch?v=k57D_pWh9Qc ">Site Oficial</a></li>
+        </ul>
+    </header>
+
+    <main>
+          <table class="animacao">
+
+            <thead>
+                <tr>
+                    <th>Datas</th>
+                    <th>Confrontos</th>
+                    <th>Locais</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>24 de Maio / 21:30</td>
+                    <td>Argentino Juniors x Corinthians</td>
+                    <td>Estádio Diego Armando Maradona</td>
+                </tr>
+
+                <tr>
+                    <td>28 de Maio / 16:00</td>
+                    <td>Corinthians x Fluminense</td>
+                    <td>Neo Química Arena</td>
+                </tr>
+
+                <tr>
+                    <td>31 de Maio / 23:30</td>
+                    <td>Corinthians x Atlético Mineiro</td>
+                    <td>Neo Química Arena</td>
+                </tr>
+
+                <tr>
+                    <td>03 de Junho / 18:30</td>
+                    <td>América Mineiro x Corinthians</td>
+                    <td>Estádio Independência</td>
+                </tr>
+
+            </tbody>
+
+          </table>
+          
+          <form>
+        
+            <fieldset>
+                <legend>Cadastro</legend>
+                <label for="email">Email</label>
+                <input style="margin-bottom: 20px;" type="text" id = "nome" name = "nome"/><br>
+                <label for="senha">Senha</label>
+                <input type="password" id = "nome" name = "nome"/>
+            </fieldset>
+
+            <fieldset>
+                <legend>Próximos Jogos</legend>
+                <label for="nome">Confronto:</label>
+                <input style="margin-bottom: 20px;" 
+                type="text" 
+                id = "nome" 
+                name = "nome"/><br>
+
+                <label for="number">Local</label>
+                <input style="margin-bottom: 20px;"  type="text" id = "loc" name = "local"/><br>
+
+                <label for="nome">Data do Jogo</label>
+                <input style="margin-bottom: 20px;"
+                type="date"
+                id = "datagame"
+                name = "datagame"><br>
+            
+            </fieldset>
+
+            <fieldset>
+                <legend>Observações</legend>
+                <textarea id="obs" name="observação" cols="75" rows="7" placeholder="Digite aqui sua observação:"> </textarea>
+            </fieldset>
+
+        <div>
+         <button type="reset">Resetar</button>
+         <button type="submit">Enviar</button>
+        </div>
+
+          </form>
+    </main>
+    
+</body>
+</html>
