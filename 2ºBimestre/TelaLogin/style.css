@@ -1,14 +1,78 @@
-body{
-    font-family: 'Comfortaa', cursive;
-    background: rgb(2,0,36);
-    background-color: rgb(252, 252, 93);
+body {
+    margin: 0;
+    background: rgb(70,0,255);
+    background: linear-gradient(90deg, rgba(70,0,255,0.82535012295934) 0%, rgba(130,0,255,1) 50%, rgba(70,0,255,1) 100%); 
 }
 
 main{
-    width: 98vw;
-    height: 98vw;
     position: relative;
-    background-color: black;
-    border-radius: 10%;
+    top: 1vh;
+    left: 1vw;
+    height: 98vh;
+    width: 98vw;
+    background-color: rgb(31, 35, 150);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.esquerda > h1 {
+    color: rgb(243, 242, 246);
+}
+
+.esquerda{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.direita{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    height: 30vw;
+    width: 20vw;
+    background: rgb(34,20,43);
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(254, 255, 255);
+}
+
+@media only screen and (max-width: 600px) {
+    .esquerda > h1{
+        display: none;
+    }
+
+    main{
+        flex-direction: column;
+    }
+}
+
+input{
+    background-color: rgb(4, 15, 64);
+    color: white;
+    border: transparent;
+}
+button{
+    margin-top: 10px;
+    height: 50px;
+    width: 200px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(31, 35, 150);
+    border-radius: 10%;
+    border: transparent;
+}
