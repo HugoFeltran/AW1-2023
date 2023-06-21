@@ -1,0 +1,94 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #7a00ff, #a729f4, #c649ec, #dc67e5, #eb85e2);
+    display: flex;
+}
+
+main{
+    margin: auto;
+    height: 80vh;
+    width: 75vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda > h1 {
+    color: rgb(0, 0, 0);
+}
+
+.esquerda{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.direita{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    width: 80vw;
+    font-weight: bold;
+    font-size: 26px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(0, 0, 0)
+}
+
+
+@media only screen and (max-width: 600px) {
+    .esquerda > h1{
+        display: none;
+    }
+    .esquerda > img {
+        width: 70%;
+    }
+
+    main{
+        flex-direction: column;
+    }
+}
+
+input{
+    background-color: rgb(211, 209, 214);
+    color: rgb(0, 0, 0);
+    border: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+button{
+    position: relative;
+    left: 10px;
+    margin-top: 10px;
+    height: 50px;
+    width: 200px;
+    color: rgb(2, 2, 2);
+    background-color: rgb(181, 163, 248);
+    border-radius: 10%;
+    border: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
