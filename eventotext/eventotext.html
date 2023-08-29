@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="fname">Nome: </label>
+            <input id="fname" type="text">
+        </div><br>
+        <div>
+            <label for="lname">Sobrenome: </label>
+            <input id="lname" type="text">
+        </div><br>
+
+        <div>
+            <label for="lsenha">Digite sua senha: </label>
+            <input id="lsenha" type="password">
+        </div><br>
+        <div>
+            <label for="csenha">Confirme sua senha: </label>
+            <input id="csenha" type="password">
+        </div><br>
+        <div>
+            <input id="submit" type="submit">
+        </div><br>
+    </form>
+    <p></p>
+    <script>
+        var form = document.querySelector("form");
+        var fname = document.getElementById("fname");
+        var lname = document.getElementById("lname");
+        var submit = document.getElementById("submit");
+        var para = document.querySelector("p");
+        var lsenha = document.getElementById("lsenha");
+        var csenha = document.getElementById("csenha");
+
+        form.onsubmit = function(e){
+            if (lsenha.value != csenha.value) {
+                e.preventDefault();
+                para.textContent = "errou as senhas burro!";
+            }
+        }
+    </script>
+</body>
+</html>
